@@ -4,20 +4,28 @@ using UnityEngine;
 
 public class RoomLight : MonoBehaviour
 {
-    public Light light; 
+    public Light roomLight; 
 
     void Start()
     {
-        light = GetComponent<Light>();
+        roomLight = GetComponent<Light>();
     }
 
     void Update()
     {
-        if(Input.GetKeyDown("tab")){
-        light.enabled = !light.enabled;
+        if(Input.GetButtonDown("Fire2")){
+            if (roomLight.color == Color.red){
+            roomLight.color = Color.white;
+            }else{
+                roomLight.color = Color.red;
+            }
         }
     }
     public void ButtonClicked(){
-        light.enabled = !light.enabled;
+        if (roomLight.color == Color.red){
+            roomLight.color = Color.white;
+        }else{
+            roomLight.color = Color.red;
+        }
     }
 }
