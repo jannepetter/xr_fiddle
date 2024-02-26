@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Grabbable
+  - Bullet
+  - Trigger
+  - LeftTriggerFinger
+  - RightTriggerFinger
   layers:
   - Default
   - TransparentFX
